@@ -26,7 +26,7 @@ public class Video extends Activity
 		myPlayer = (VideoView) findViewById(R.id.videoView1);
 		returnButton = (Button) findViewById(R.id.homeButton);
 		
-		videoLocation = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.party);
+		videoLocation = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.);
 		myVideoController = new MediaController(this);
 		
 		setupMedia();

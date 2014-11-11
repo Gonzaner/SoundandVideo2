@@ -1094,10 +1094,11 @@ containing a value of this type.
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
+        public static final int expandableListView1=0x7f050040;
         public static final int expanded_menu=0x7f05002c;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
-        public static final int homeButton=0x7f050041;
+        public static final int homeButton=0x7f050042;
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
@@ -1135,7 +1136,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int videoView1=0x7f050040;
+        public static final int videoView1=0x7f050041;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {

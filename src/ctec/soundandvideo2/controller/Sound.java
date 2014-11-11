@@ -27,7 +27,7 @@ public class Sound extends Activity implements Runnable
 			pauseButton = (Button) findViewById(R.id.pauseButton);
 			stopButton = (Button)  findViewById(R.id.stopButton);
 			soundSeekBar= (SeekBar) findViewById(R.id.soundSeekBar);
-			soundPlayer = MediaPlayer.create(this.getBaseContext(), R.raw.pomdeter);
+			soundPlayer = MediaPlayer.create(this.getBaseContext(), R.raw.);
 			
 			setupListeners(); 
 			
@@ -65,7 +65,7 @@ public class Sound extends Activity implements Runnable
 				public void onClick(View currentView)
 				{
 					soundPlayer.stop();
-					soundPlayer = MediaPlayer.create(getBaseContext(), R.raw.pomdeter);
+					soundPlayer = MediaPlayer.create(getBaseContext(), R.raw.);
 				}
 			});
 			
@@ -84,9 +84,14 @@ public class Sound extends Activity implements Runnable
 					{
 						soundPlayer.seekTo(progress);
 					}
-				};
+				}
+			
+			});
+		}
+	
 			
 			
+		@Override
 		public void run()
 		{
 			int currentPosition = 0;
@@ -111,11 +116,8 @@ public class Sound extends Activity implements Runnable
 				soundSeekBar.setProgress(currentPosition);
 			}
 			
-			
-			}
 		}
-	 }
-		
+					
 }
 
 
